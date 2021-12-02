@@ -1,0 +1,84 @@
+header{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: rgb(85, 85, 85);
+     color: wheat!important;
+     .toggle{
+         width: 51px;
+         height: 51px;
+         background-color: turquoise;
+         display:none;
+     }
+     .logo{
+         text-decoration: none;
+         color: red;
+         font-weight: 700px;
+         display: flex;
+         align-items: center;
+     }
+     .nav{
+         display: flex;
+         align-items: center;
+         list-style: none;
+         &__item{
+             display: flex;
+             &__link{
+                 text-decoration: none;
+                 color: black;
+                 padding: 8px 16px;
+                 color: wheat;
+             }
+         }
+     }
+     .nav__number{
+        width: 159px;
+        height: 40px;
+        background-color:rgb(99, 158, 235);
+        border-radius: 5px;
+        text-align: center;
+        padding: 6px;
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+    }
+ }
+ @media (max-width:803px){
+     header{
+         position: relative;
+         .toggle{
+             display: flex;
+             &:hover ~ .nav{
+                 transform: translate(0 ,0);
+                 opacity: 1;
+             }
+         }
+    
+         .nav{
+             width: 30%;
+             height: 100vh;
+             margin: 0;
+             padding: 0;
+             left: 0;
+             display: flex;
+             align-items: center;
+             flex-direction: column;
+             list-style: none;
+             position: absolute;
+             background-color: inherit;
+             top: 100%;
+             transition: transform .5s ease-in-out,opacity .5s ease-in-out ;
+             transform: translateX(-100%);
+             opacity: 0;
+     
+             &__item{
+                 display: flex;
+                 &__link{
+                    color: rgb(91, 153, 189);;
+                 }
+            }
+         }
+    }
+}

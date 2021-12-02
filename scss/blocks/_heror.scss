@@ -1,0 +1,130 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        h2{  
+            position: static;
+            width: 470px;
+            height: 78px;
+            left: 0px;
+            top: 0px;
+
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 130%;
+            /* or 39px */
+
+
+            color: #000000;
+        }
+        p{
+            position: static;
+            width: 465px;
+            height: 74px;
+            left: 2.5px;
+            top: 94px;
+
+            /* body-text */
+
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            /* or 150% */
+
+
+            color: #000000;
+        }
+        .small{
+            position: static;
+            width: 200px;
+            height: 28px;
+            left: 16px;
+            top: 8px;
+            border-radius: 5px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 24px;
+            background-color: rgb(158, 159, 255);
+            margin: 20px 0;
+            a{
+                text-decoration: none;
+                font-family: sans-serif;
+            }
+        }
+    }
+    .block{
+        width: 600px;
+        height: 500px;
+        border-radius: 20px;
+        // border: 1px solid red;
+    }
+}
+@media (max-width:817px){
+    .container {
+        
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        // justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: flex-start;
+        .card{
+            h2{
+                position: static;
+                width: 100%;
+                height: 78px;
+                left: 0px;
+                top: 0px;
+    
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                // line-height: 100%;
+                /* or 39px */
+    
+    
+                color: #000000;
+            }
+            p{
+                position: static;
+                width: 100%;
+                height: 74px;
+                left: 2.5px;
+                top: 80px;
+    
+                /* body-text */
+    
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 24px;
+                /* or 150% */
+    
+    
+                color: #000000;
+            }
+            .block{
+                padding-top: 50px;
+                width: 100px;
+                height: 200px;
+                border-radius: 10px;
+                // border: 1px solid red;
+            }
+        }
+    }
+}

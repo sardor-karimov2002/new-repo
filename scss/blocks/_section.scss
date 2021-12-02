@@ -1,0 +1,87 @@
+.container1{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    .box0{
+        display: flex;
+        align-items: center;
+        margin: 10px auto;
+        width: 117px;
+        height: 31px;
+    }
+    .box1{
+        text-align: center;
+        width: 719px;
+        height: 48px;
+        margin: 10px auto;
+    }
+    .poc{
+        display: flex;
+        justify-content: space-between;
+    }
+    .pos1{
+        width: 320px;
+        height: 260px;
+        margin-top:30px ;
+        border-radius: 8px;
+        // border: 1px solid;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+        h4{
+            text-align: center;
+            // padding-top: 140px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 130%;
+            /* identical to box height, or 26px */
+
+            text-align: center;
+
+            color: #000000;
+        }
+        p{
+            text-align: center;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+            text-align: center;
+
+            color: #000000;
+        }
+    }
+    .pos1::before{
+        display: block;
+        background-image: url(/img/kkkk.png);
+        background-repeat: no-repeat;
+        content: "";
+        height: 150px;
+        margin-left: 50px;
+    }
+    .pos1:nth-child(2):before{
+        display: block;
+        background-image: url(/img/boot.png);
+        background-repeat: no-repeat;
+        content: "";
+        height: 150px;
+        margin-left: 50px;
+    }
+    .pos1:nth-child(3):before{
+        display: block;
+        background-image: url(/img/smm-illustration.png);
+        background-repeat: no-repeat;
+        content: "";
+        height: 150px;
+        margin-left: 50px;
+    }
+    .vret{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 20px ;
+    }
+}
